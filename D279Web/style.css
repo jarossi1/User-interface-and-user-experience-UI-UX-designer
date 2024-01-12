@@ -1,0 +1,137 @@
+body { /* Styling for the body */
+    background-color: #6699CC;
+}
+
+header {
+  position: relative;
+  background-color: #6699CC;
+  padding: 10px 20px;
+}
+search{
+  position: absolute;
+  top: 100%; /* Place the search bar below the logo */
+  left: 0;
+  width: 100%;
+  background-color: #6699CC; /* Match the header background color */
+  padding: 10px;
+  display: none; /* Hide the search bar by default */
+}
+search form {
+  display: flex;
+  align-items: center;
+}
+search input[type="text"] {
+  width: 100%;
+  max-width: 300px;
+  padding: 5px;
+  border: none;
+  border-radius: 20px;
+}
+
+search input[type="submit"] {
+  margin-left: 10px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 20px;
+  background-color: #003B6D;
+  color: #fff;
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .search {
+      display: block; /* Show the search bar for mobile view */
+  }
+}
+  
+.search input[type="text"],
+.search input[type="submit"] {
+  width: auto;
+  max-width: none;
+}
+
+nav { /* Styling for the navigation bar */
+    position: relative;
+    background-color: - #6699CC;
+    height: 100px; /* Sets the height of the navigation bar */
+    display: flex; /* Displays the navigation items in a horizontal row */
+    align-items: center; /* Aligns the navigation items vertically */
+}
+
+
+nav ul { /* Styling for the unordered list (ul) inside the navigation bar */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;/* Displays the navigation items in a horizontal row */
+    justify-content: center; /* Centers the navigation items horizontally */
+}
+
+/* styling for the links inside the navigation items */
+nav a {
+
+    color: #676767;
+    text-decoration: none;
+    padding: 22px 24px; /* Adds padding to the top and bottom of each navigation item */
+    border: 2px solid #003B6D; /* Adds a border around the navigation items */
+    border-radius: 20px; /* Rounds the corners of the navigation items */
+    transition: bacckground-color 0.2s ease; /* Adds a transition effect to the background color of the navigation items */
+}
+nav a:hover {
+    background-color: #413f3f; /* Adds a darker background color to the navigation item when the mouse is hovered over it */
+    color: #fff; /* Changes the color of the text inside the navigation item when the mouse is hovered over it */
+}
+nav a.active {
+    background-color: #413f3f; /* Adds a darker background color to the navigation item when it is active */
+    color: #fff; /* Changes the color of the text inside the navigation item when it is active */
+}
+
+/* Override the color of the link when it is visited */
+a.blue-link:visited {
+    color: blue;
+  }
+  
+  .img1 {
+    width: 200px; 
+    height: 270px; 
+    margin: 17px; 
+    float: right;
+  }
+  .contact {
+    text-align: left; /* Aligns the text to the center */
+    font-size: 30px; /* Sets the font size to 20px */
+    font-style: oblique; /* Sets the font style to oblique */
+     
+  }
+
+  .win {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center; /* Aligns the text to the center */
+    font-size: 50px; /* Sets the font size to 20px */
+    font-style: oblique; /* Sets the font style to oblique */
+    position: relative;
+     
+  }
+
+  .mainp {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px; /* Sets the font size to 20px */
+    font-style: oblique; /* Sets the font style to oblique */
+  }
+
+  .office-photo {
+    display: flex; /* Displays the navigation items in a horizontal row */
+    display: block;
+  }
+
+  .officetext {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-style: oblique;
+    margin: 0px;
+  }
+.right{
+  display: block; 
+  float: right;
+  font-size: 30px;
+  font-style: oblique;
+}
